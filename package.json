@@ -1,0 +1,19 @@
+{
+  "name": "mars-backend",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "server": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
