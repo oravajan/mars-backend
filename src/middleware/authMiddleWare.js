@@ -1,4 +1,4 @@
-const admin = require('../config/firebase-config');
+const {admin} = require('../config/firebase-config');
 
 module.exports = async (req, res, next) => {
   const authHeader = req.headers.authorization;

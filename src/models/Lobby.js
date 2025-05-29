@@ -1,17 +1,18 @@
 class Lobby {
-  constructor(playerId) {
-    this.players = [playerId];
+  constructor(id, userId) {
+    this.id = id;
+    this.players = [userId];
   }
 
   addPlayer(userId) {
-    if (!this.players.includes(userId)) {
+    const exists = this.players.find(id => id === userId);
+    if (!exists) {
       this.players.push(userId);
     }
   }
 
   removePlayer(userId) {
-    this.players = this.players.filter(p => p !== userId);
-    return this.players.length === 0;
+    this.players = this.players.filter(id => id !== userId);
   }
 }
 
